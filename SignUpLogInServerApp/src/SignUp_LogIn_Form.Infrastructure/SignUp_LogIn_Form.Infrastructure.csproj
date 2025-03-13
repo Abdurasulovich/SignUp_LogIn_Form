@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SignUp_LogIn_Form.Application\SignUp_LogIn_Form.Application.csproj" />
+    <ProjectReference Include="..\SignUp_LogIn_Form.Persistence\SignUp_LogIn_Form.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

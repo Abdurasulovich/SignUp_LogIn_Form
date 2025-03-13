@@ -1,0 +1,40 @@
+.register-login-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.register-login-form.active .form-container .login-form-link{
+  width: 1200px;
+}
+.form-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* gap: 120px; */
+}
+
+.form-container.move-left {
+  transform: translateX(-50%);
+}
+
+.form-container.move-right {
+  transform: translateX(50%);
+}
+
+.login-form,
+.register-form {
+  width: 50%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.register-login-form.active .login-form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.register-login-form:not(.active) .register-form {
+  opacity: 0;
+  pointer-events: none;
+}
